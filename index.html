@@ -1,10 +1,90 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="style.css" rel="stylesheet" type="text/css">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700,900" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900" rel="stylesheet"> -->
+        <link href="./style.css" rel="stylesheet" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <script src="main.js"></script>
+
+        <div class="introduction" data-introduction>
+            
+            <div class="introduction-segments">
+                <div class="segment --delay-1000 --duration-600 --slide-left"></div>
+                <div class="segment --delay-1400 --duration-600 --slide-right"></div>
+                <div class="segment --delay-1800 --duration-600 --slide-left test" data-animation-end></div>
+                <div class="segment --delay-1600 --duration-600 --slide-right"></div>
+                <div class="segment --delay-1200 --duration-600 --slide-left"></div>
+            </div>
+    
+            <div class="introduction-title --delay-1800 --duration-400 --fade-out-left">
+                <h1><span class="--delay-400 --duration-600 --fade-in-up">hello</span> <span class="--delay-600 --duration-600 --fade-in-down">there</span></h1>
+            </div>
+
+        </div>
+
+        <main>
+            
+            <div class="navigation">
+                <a href="#aboutme" class="--delay-1600 --duration-800 --fade-in-right">about me</a>
+                <a href="#skills" class="--delay-1800 --duration-800 --fade-in-right">skills</a>
+            </div>
+
+            <div class="content">
+                
+                <div id="aboutme" data-section>
+
+                    <div class="filter"></div>
+
+                    <div class="section">
+                        <h2 class="--delay-1800 --duration-800 --fade-in-left">about me</h2>
+                        <p class="--delay-2000 --duration-800 --fade-in-left">
+                            I'm a 23-year-old front-end developer and graphic designer from Antwerp, Belgium. 
+                            Here you can find some information about me and my work.
+                            I do websites, logos, branding and other designy stuff.
+                        </p>
+                        <p class="--delay-2200 --duration-800 --fade-in-left">
+                            Since I was 15 years old I'm in love with graphic design.
+                            <br>First I started to teach myself the basics of photo manipulation and soon after I learned to design 2D and 3D logos.
+                            I pursued my passion and last year I graduated with honors from the AP university college of Antwerp as a crossmedia designer.
+                            <br>Currently I'm studying computer science at the Univerity of Antwerp to further understand the fundamentals of programming,
+                            so I'm ready for the future as a front-end developer and all-round crossmedia designer.
+                        </p>
+                    </div>
+        
+                </div>
+
+                <div id="skills" data-section>
+
+                    <div class="section">
+                        <h2 class="--delay-2400 --duration-800 --fade-in-left">skills</h2>
+                        <p class="--delay-2600 --duration-800 --fade-in-left">
+                            I'm a 23-year-old front-end developer and graphic designer from Antwerp, Belgium. 
+                            Here you can find some information about me and my work.
+                            I do websites, logos, branding and other designy stuff.
+                        </p>
+                        <p class="--delay-2800 --duration-800 --fade-in-left">
+                            Since I was 15 years old I'm in love with graphic design.
+                            <br>First I started to teach myself the basics of photo manipulation and soon after I learned to design 2D and 3D logos.
+                            I pursued my passion and last year I graduated with honors from the AP university college of Antwerp as a crossmedia designer.
+                            <br>Currently I'm studying computer science at the Univerity of Antwerp to further understand the fundamentals of programming,
+                            so I'm ready for the future as a front-end developer and all-round crossmedia designer.
+                        </p>
+                    </div>
+        
+                </div>
+
+            </div>
+
+            <div class="footer">
+                <p>Copyright © 2019 - Made by Tijs Verellen</p>
+            </div>
+
+        </main>
+
+        <script src="./main.js"></script>
+        
     </body>
 </html>
