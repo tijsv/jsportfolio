@@ -264,7 +264,7 @@ main {
     font-weight: 300; }
 
 .test {
-  background-image: url("./hellothere.png");
+  background-image: url("./hello.png");
   background-size: cover;
   background-position: center;
   position: relative; }
