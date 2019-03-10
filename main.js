@@ -31,15 +31,25 @@
             },
             {
                 name: 'slide-out-left',
-                styleStart: 'transform: translateZ(0) translateX(0) !important',
-                styleEnd: 'transform: translateZ(0) translateX(-100%) !important'
+                styleStart: 'transform: translateZ(0) translateX(0) !important;',
+                styleEnd: 'transform: translateZ(0) translateX(-100%) !important;'
             },
             {
                 name: 'slide-out-right',
-                styleStart: 'transform: translateZ(0) translateX(0) !important',
-                styleEnd: 'transform: translateZ(0) translateX(100%) !important'
+                styleStart: 'transform: translateZ(0) translateX(0) !important;',
+                styleEnd: 'transform: translateZ(0) translateX(100%) !important;'
             },
-        ]);
+            {
+                name: 'zoom-in',
+                styleStart: 'transform: translateZ(0) scale(0);',
+                styleEnd: 'transform: translateZ(0) scale(1);'
+            }
+        ], {
+            default: {
+                name: "fade-in-left",
+                easing: 'cubic-bezier(0.13, 0.92, 0.37, 1)',
+            }
+        });
 
         let introductionModal = document.querySelector('[data-introduction]'),
             lastAnimationSegment = document.querySelector('[data-animation-end]');

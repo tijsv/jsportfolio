@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700,900" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900" rel="stylesheet">
         <link href="./style.css" rel="stylesheet" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -12,13 +11,13 @@
         <div class="introduction" data-introduction>
             
             <div class="introduction-segments">
-                <div data-jfs="slide-out-left" data-jfs-delay="1000" class="segment"></div>
+                <div data-jfs="slide-out-left" data-jfs-delay="1200" class="segment"></div>
                 <div data-jfs="slide-out-right" data-jfs-delay="1400" class="segment"></div>
-                <div data-jfs="slide-out-left" data-jfs-delay="1800" class="segment introduction-title" data-animation-end>
+                <div data-jfs="slide-out-left" data-jfs-delay="1600" class="segment introduction-title" data-animation-end>
                     <h1><span data-jfs="fade-in-up" data-jfs-delay="400">hello</span> <span data-jfs="fade-in-down" data-jfs-delay="600">there</span></h1>
                 </div>
-                <div data-jfs="slide-out-right" data-jfs-delay="1600" class="segment"></div>
-                <div data-jfs="slide-out-left" data-jfs-offset-start="0" data-jfs-delay="1200" class="segment"></div>
+                <div data-jfs-offset-start="0" data-jfs="slide-out-right" data-jfs-delay="1500" class="segment"></div>
+                <div data-jfs-offset-start="0" data-jfs="slide-out-left" data-jfs-delay="1300" class="segment"></div>
             </div>
 
         </div>
@@ -26,24 +25,49 @@
         <main>
             
             <div class="navigation">
-                <a href="#aboutme" data-jfs="fade-in-right" data-jfs-delay="1600">about me</a>
-                <a href="#skills" data-jfs="fade-in-right" data-jfs-delay="1800">skills</a>
+                <div>
+                    <a class="name" href="#aboutme" data-jfs="fade-in-right" data-jfs-delay="1600">Tijs Verellen</a>
+                </div>
+                <div>
+                    <a href="#aboutme" data-jfs data-jfs-delay="1700">about</a>
+                    <a href="#skills" data-jfs data-jfs-delay="1800">skills</a>
+                    <a href="#work" data-jfs data-jfs-delay="1900">work</a>
+                </div>    
             </div>
 
             <div class="content">
                 
-                <div id="aboutme" data-section>
-
-                    <div class="filter"></div>
+                <div id="introduction" data-section>
 
                     <div class="section">
-                        <h2 data-jfs="fade-in-left" data-jfs-delay="1800">about me</h2>
-                        <p data-jfs="fade-in-left" data-jfs-delay="2000">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut atque perferendis assumenda at voluptatem autem commodi cupiditate fuga ullam sequi vel, sapiente velit, et sed perspiciatis ea eveniet aliquid obcaecati.
+                        <h2 data-jfs data-jfs-delay="1800">Tijs Verellen.<br>Frontend developer.<br>Graphic designer.</h2>
+                        <p data-jfs data-jfs-delay="1900">
+                            I am Tijs Verellen, a <b class="text-primary">frontend developer</b> and <b class="text-secondary">graphic designer</b> from Antwerp, Belgium.
+                            <br>Want to know more about me and the work I do? You came to the right place.
+                            <br>Oh and I love JavaScript. Change my mind.
                         </p>
-                        <p data-jfs="fade-in-left" data-jfs-delay="2200">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut atque perferendis assumenda at voluptatem autem commodi cupiditate fuga ullam sequi vel, sapiente velit, et sed perspiciatis ea eveniet aliquid obcaecati.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut atque perferendis assumenda at voluptatem autem commodi cupiditate fuga ullam sequi vel, sapiente velit, et sed perspiciatis ea eveniet aliquid obcaecati.
+                        <div class="cta">
+                            <a href="#aboutme" data-jfs="zoom-in" data-jfs-delay="2000" data-jfs-offset-start="0">Learn something about me</a>
+                            <a href="#skills" data-jfs="zoom-in" data-jfs-delay="2100" data-jfs-offset-start="0">These are my skills</a>
+                            <a href="#work" data-jfs="zoom-in" data-jfs-delay="2200" data-jfs-offset-start="0">Some of my work</a>
+                        </div>
+                    </div>
+        
+                </div>
+
+                <div id="aboutme" data-section>
+
+                    <div class="section">
+                        <h2 data-jfs>About me</h2>
+                        <p data-jfs>
+                            Since I was 15 years old I'm in love with graphic design. 
+                            First I started to teach myself the basics of photo manipulation and soon after I learned to design 2D and 3D logos. I pursued my passion and two years ago I graduated with honors from the AP university college of Antwerp as a crossmedia designer. 
+                        </p>
+                        <p data-jfs>
+                            Last year I studied computer engineering at the university of Antwerp to level up my basic knowledge about programming. After that year I realised that I was ready to search for a job and so I did.
+                        </p>
+                        <p data-jfs>
+                            Now I'm a proud member of the development team at <a href="https://thinktomorrow.be" target="_blank">Think Tomorrow</a> as a frontend developer and JavaScript ninja.
                         </p>
                     </div>
         
@@ -52,17 +76,58 @@
                 <div id="skills" data-section>
 
                     <div class="section">
-                        <h2 data-jfs="fade-in-left">skills</h2>
-                        <p data-jfs="fade-in-left">
+                        <!-- <h2 data-jfs>Skills</h2> -->
+                        <div class="cards">
+                            <div class="card">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-code"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                                <div>
+                                    <h3>Development</h3>
+                                    <p>
+                                        HTML & CSS
+                                        <br>JavaScript
+                                        <br>Node.js
+                                        <br>PHP & Laravel
+                                        <br>Vue.js
+                                        <br>Python
+                                        <br>C++
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pen-tool"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+                                <div>
+                                    <h3>Design</h3>
+                                    <p>
+                                        UX / UI
+                                        <br>Logos
+                                        <br>Corporate identity
+                                        <br>Poster
+                                        <br>Flyers
+                                        <br>Photo manipulation
+                                        <br>Intro videos
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+
+                <div id="work" data-section>
+
+                    <div class="section">
+                        <h2 data-jfs>Work</h2>
+                        <p data-jfs>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut atque perferendis assumenda at voluptatem autem commodi cupiditate fuga ullam sequi vel, sapiente velit, et sed perspiciatis ea eveniet aliquid obcaecati.
                         </p>
-                        <p data-jfs="fade-in-left">
+                        <p data-jfs>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi impedit molestias laudantium distinctio. Ipsa eaque delectus laborum, repellat, praesentium harum atque, sint at distinctio sequi quae voluptatum. Odit, ullam molestias.
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem minima quidem quasi aliquam deleniti magni harum inventore eius eveniet possimus, nemo dolorem modi omnis facilis eum quisquam provident repellendus quos.
                         </p>
                     </div>
         
                 </div>
+    
 
             </div>
 
