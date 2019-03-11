@@ -2,6 +2,8 @@ class JFS {
 
     constructor(customAnimations = [], options = {}) {
 
+        this.loadingModal = document.querySelector('[data-jfs-loading]');
+
         this.defaultValues = this.generateDefaults(options);
 
         this.scrollElements = document.querySelectorAll('[data-jfs]');
@@ -179,6 +181,8 @@ class JFS {
             }
 
         }
+
+        if(this.loadingModal) this.loadingModal.style.display = "none";
 
         let that = this;
 
@@ -381,3 +385,5 @@ class JFS {
     }
 
 }
+
+
